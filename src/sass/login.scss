@@ -1,0 +1,20 @@
+.login {
+  padding: 60px 0px 140px;
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn {
+    padding: 16px 48px;
+    border-radius: 4px;
+    background-color: #db4444;
+    color: #fff;
+  }
+  &__text {
+    color: #db4444;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

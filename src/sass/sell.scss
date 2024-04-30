@@ -1,0 +1,136 @@
+.sel {
+  padding: 40px 0px 20px;
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    @media (max-width: 630px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    & img {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  &__exam {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__div {
+    width: 20px;
+    height: 40px;
+    background-color: #db4444;
+    border-radius: 4px;
+  }
+  &__h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #db4444;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000000;
+  }
+  &__btn {
+    padding: 16px 48px;
+    border-radius: 4px;
+    background-color: #db4444;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1100px) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
+  &__add {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  &__button {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    background-color: #000000;
+    padding: 8px 0px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 0px 0px 4px 4px;
+    transition: all 500ms;
+  }
+  &__card {
+    width: 260px;
+    position: relative;
+    transition: all 500ms;
+    @media (max-width: 350px) {
+      width: 100%;
+    }
+    &:hover .sel__button {
+      bottom: 0;
+    }
+    &__title {
+      color: #000000;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      color: #db4444;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+  &__img {
+    width: 100%;
+    padding: 35px 40px;
+  }
+  &__abs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
+  &__span {
+    color: #000000;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+}
